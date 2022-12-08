@@ -1,10 +1,16 @@
-# def merge(nums1, m, nums2, n):
-    
+def merge(nums1, m, nums2, n):
+    nums1.reverse()
+    for i in range(n):
+        nums1[i] = nums2[i]
+    nums1.sort()
+    print(nums1)
 
 nums1 = [1,2,3,0,0,0]
 m = 3
 nums2 = [2,5,6]
 n = 3
+
+# bottom is trace to get the answer. three differnt answer
 
 # while m > 0 and n > 0: # first m, n should be larger than 0
 #     if nums1[m-1] >= nums2[n-1]: # if last variable of nums1 list is larger or same then nums2's last variable
